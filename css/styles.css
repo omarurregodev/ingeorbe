@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home__sec {
+    background-image: url('/img/home-pic.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: auto;
+}
+
+.home__sec .container-fluid {
+    background-color: rgba(20, 108, 148, 0.85);
+    height: 70vh;
+}
