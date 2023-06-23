@@ -1,117 +1,148 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 40px;
+  padding: 20px 0;
+  margin: 3rem auto;
+  text-align: left;
+  width: 100%;
 }
 
 /* START ACCORDION LIBRARY */
-  
+
+.accordion {
+  max-width: 60%;
+  max-width: auto;
+  height: 350px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("https://unsplash.it/650/350?image=675");
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("https://unsplash.it/650/350?image=674");
+}
+
+.accordion ul li:nth-child(3) {
+  background-image: url("https://unsplash.it/650/350?image=673");
+}
+
+.accordion ul li:nth-child(4) {
+  background-image: url("https://unsplash.it/650/350?image=672");
+}
+
+.accordion ul li:nth-child(5) {
+  background-image: url("https://unsplash.it/650/350?image=671");
+}
+
+.accordion ul li:nth-child(6) {
+  background-image: url("https://unsplash.it/650/350?image=670");
+}
+
+.accordion ul:hover li {
+  width: 8%;
+}
+
+.accordion ul:hover li:hover {
+  width: 60%;
+}
+
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+    margin: 0;
+  }
+
   .accordion {
-    width: 100%;
-    max-width: auto;
-    height: 350px;
-    overflow: hidden;
-    margin: 0px auto;
+    height: auto;
   }
-  
-  .accordion ul {
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .accordion ul li {
-    display: table-cell;
-    vertical-align: bottom;
-    position: relative;
-    width: 16.666%;
-    height: 350px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: all 500ms ease;
-  }
-  
-  .accordion ul li div {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .accordion ul li div a {
-    display: block;
-    height: 350px;
-    width: 100%;
-    position: relative;
-    z-index: 3;
-    vertical-align: bottom;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    color: #fff;
-    text-decoration: none;
-    font-family: Open Sans, sans-serif;
-    transition: all 200ms ease;
-  }
-  
-  .accordion ul li div a * {
-    opacity: 0;
-    margin: 0;
-    width: 100%;
-    text-overflow: ellipsis;
-    position: relative;
-    z-index: 5;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
-    -webkit-transition: all 400ms ease;
-    transition: all 400ms ease;
-  }
-  
-  .accordion ul li div a h2 {
-    font-family: Montserrat, sans-serif;
-    text-overflow: clip;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-    top: 160px;
-  }
-  
-  .accordion ul li div a p {
-    top: 160px;
-    font-size: 13.5px;
-  }
-  
-  .accordion ul li:nth-child(1) { background-image: url("https://unsplash.it/650/350?image=675"); }
-  
-  .accordion ul li:nth-child(2) { background-image: url("https://unsplash.it/650/350?image=674"); }
-  
-  .accordion ul li:nth-child(3) { background-image: url("https://unsplash.it/650/350?image=673"); }
-  
-  .accordion ul li:nth-child(4) { background-image: url("https://unsplash.it/650/350?image=672"); }
-  
-  .accordion ul li:nth-child(5) { background-image: url("https://unsplash.it/650/350?image=671"); }
-  
-  .accordion ul li:nth-child(6) { background-image: url("https://unsplash.it/650/350?image=670"); }
-  
-  .accordion ul:hover li { width: 8%; }
-  
-  .accordion ul:hover li:hover { width: 60%; }
-  
-  .accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
-  
-  .accordion ul:hover li:hover a * {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-   @media screen and (max-width: 600px) {
-  
-  body { margin: 0; }
-  
-  .accordion { height: auto; }
-  
+
   .accordion ul li,
   .accordion ul li:hover,
   .accordion ul:hover li,
@@ -123,110 +154,222 @@
     -webkit-transition: none;
     transition: none;
   }
-  }
+}
 
 /* END ACCORDION LIBRARY */
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* NAVBAR STYLES */
 
 .navbar {
-    width: 100%;
-    height: auto;
-    background-color: none;
-    border: 1px solid #000;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: none;
+  border: 1px solid #000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_bg {
+  background-color: black;
+  z-index: 99;
 }
 
 .navbar .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
 }
 
 .navbar .button-container-navbar {
-    width: 50%;
+  width: 50%;
 }
 
 .navbar .button-container-navbar .button-4 span {
-    /* background-color: black; */
+  /* background-color: black; */
 }
 
 .navbar .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
 }
 
 /* HERO SECTION */
 
 .home__sec {
-    background-image: url('../img/home-pic.jpg');
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    height: auto;
+  background-image: url('../img/home-pic.jpg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  height: auto;
 }
 
 .home__sec .container-fluid {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0.3575630935968137) 0%, rgba(0,0,0,0.5928572112438726) 29%, rgba(0,0,0,0.7805322812718838) 62%);
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3575630935968137) 0%, rgba(0, 0, 0, 0.5928572112438726) 29%, rgba(0, 0, 0, 0.7805322812718838) 62%);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .home__sec .container-fluid .container__hero {
-    width: 60%;
-    text-align: left;
+  width: 60%;
+  text-align: left;
 }
 
 .home__sec .container-fluid .container__hero h1 {
-    padding: 0 0 0 20rem;
-    color: #F6F1F1;
-    font-family: 'Pathway Extreme', sans-serif;
-    font-size: 65px;
-    text-align: left;
+  padding: 0 0 0 20rem;
+  color: #F6F1F1;
+  font-family: 'Pathway Extreme', sans-serif;
+  font-size: 65px;
+  text-align: left;
 }
 
 /***** BLACKQUOTE SECTION *****/
 
 .blockquote__sec {
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blockquote__sec .container_blockquote {
-    width: 60%;
-    flex-direction: column;
-    text-align: center;
+  width: 60%;
+  flex-direction: column;
+  text-align: center;
 }
 
 .blockquote__sec .container_blockquote .blockquote p {
-    font-size: 27px;
-    font-family: 'Roboto', sans-serif;
+  font-size: 27px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .blockquote__sec .container_blockquote .blockquote-footer {
-    text-align: end;
-    padding: 10px 0;
+  text-align: end;
+  padding: 10px 0;
 }
 
 .blockquote__sec .container_blockquote .blockquote-footer cite {
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    text-align: end;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-align: end;
 }
 
 /******** OUR SERVICES SECTION ********/
 
+.services__sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+
+/******** ADVANTAGES SECTION ********/
+
+.advantages__sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+.advantages__sec .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.advantages__sec .container .adv__article, .adv__figure {
+  max-width: 350px;
+}
+
+.copy_text {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: 'Pathway Extreme', sans-serif;
+  font-weight: lighter;
+}
+
+
+/******** CLIENTS SECTION ********/
+
+.clients__sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+.clients__sec .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.logo_client_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/****** CONTACT SECTION *****/
+
+.contact__sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10%;
+  padding: 20px 0;
+}
+
+.contact__sec .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.contact_form, .location {
+  max-width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/****** FOOTER SECTION *******/
+
+.footer__sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+
+/****** MEDIA QUERIES *******/
+
+@media (min-width: 1180px) {
+  .container_blockquote {
+    max-width: 40%;
+  }
+}
