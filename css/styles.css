@@ -12,6 +12,53 @@
   width: 100%;
 }
 
+/*** BUTTONS STYLES ***/
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px 25px;
+  padding: 10px 5px;
+  border-radius: 0;
+  border-style: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.button-container .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 0;
+  border-style: none;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-container-navbar .btn {
+  position: relative;
+}
+
+.button-container-navbar .btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.5s ease-in-out;
+}
+
+.button-container-navbar .btn:hover::after {
+  width: 100%;
+}
+
 /* START ACCORDION LIBRARY */
 
 .accordion {
@@ -165,17 +212,25 @@ h2 {
 /* NAVBAR STYLES */
 
 .navbar {
+  transition: 1.5s;
   width: 100%;
   height: auto;
   background-color: none;
-  border: 1px solid #000;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px 20px;
 }
 
 .navbar_bg {
+  transition: 1.5s;
+  background-color: black;
+  z-index: 99;
+}
+
+.navbar_bg_none {
+  transition: 3s;
   background-color: black;
   z-index: 99;
 }
@@ -189,10 +244,12 @@ h2 {
 
 .navbar .button-container-navbar {
   width: 50%;
-}
-
-.navbar .button-container-navbar .button-4 span {
-  /* background-color: black; */
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .navbar .button-container {
@@ -214,23 +271,24 @@ h2 {
 .home__sec .container-fluid {
   background: rgb(0, 0, 0);
   background: radial-gradient(circle, rgba(0, 0, 0, 0.3575630935968137) 0%, rgba(0, 0, 0, 0.5928572112438726) 29%, rgba(0, 0, 0, 0.7805322812718838) 62%);
-  height: 70vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: start;
 }
 
 .home__sec .container-fluid .container__hero {
-  width: 60%;
+  width: 80%;
   text-align: left;
 }
 
 .home__sec .container-fluid .container__hero h1 {
-  padding: 0 0 0 20rem;
+  padding: 0 0 0 15rem;
   color: #F6F1F1;
   font-family: 'Pathway Extreme', sans-serif;
   font-size: 65px;
   text-align: left;
+
 }
 
 /***** BLACKQUOTE SECTION *****/
@@ -292,11 +350,11 @@ h2 {
 }
 
 .advantages__sec .container .adv__article, .adv__figure {
-  max-width: 350px;
+  max-width: 380px;
 }
 
 .copy_text {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 5px;
   font-family: 'Pathway Extreme', sans-serif;
   font-weight: lighter;

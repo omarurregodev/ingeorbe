@@ -1,19 +1,14 @@
-$(document).ready(function () {
-  $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    $(".navbar").addClass('navbar_bg');
-  });
-
-  $(window).on("scroll", () => {
-    $("[touching]").each(function() {
-      var className = $('.services__sec').attr("touching")
-      var offset = $('.services__sec').offset().top - $(window).scrollTop();
-      if (offset <= 0) {
-        $('.services__sec').addClass("animate__animated animate__fadeInLeft")
-      } else {
-        $('.services__sec').removeClass("animate__animated animate__fadeInLeft")
-      }
-    })
-  }).trigger("scroll")
-
+document.addEventListener('DOMContentLoaded', () => {
+  // FUNCTION TO ADD CLASS TO THE NAVBAR WHEN IT SCROLL
+  window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.add('navbar_bg')
+  })
+  // FUNCTION TO REMOVE CLASS TO THE NAVBAR WHEN GETS BACK TOP
+  window.addEventListener('scroll', () => {
+    let scrollPosition = window.scrollY;
+    if (scrollPosition === 0) {
+      document.querySelector('.navbar').classList.remove('navbar_bg')
+      document.querySelector('.navbar').classList.add('navbar')
+    }
+  })
 });
