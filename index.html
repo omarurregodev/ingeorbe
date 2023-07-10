@@ -20,24 +20,24 @@
         <img src="img/logo.png" alt="Logo_ingeorbe" width="auto" height="50">
       </div>
       <div class="button-container-navbar">
-        <button class="btn">
+        <button class="btn" onclick="scrollToSection('home')">
           <span>Home</span>
         </button>
-        <button id="test" class="btn">
+        <button class="btn" onclick="scrollToSection('servicios')">
           <span>Servicios</span>
         </button>
         <button class="btn">
-          <span>Proyectos</span>
+          <a href="/projects.html"><span>Proyectos</span></a>
         </button>
       </div>
       <div class="button-container">
-        <button class="btn">
+        <button class="btn-standar" onclick="scrollToSection('contacto')">
           <span>Contacto</span>
         </button>
       </div>
     </nav>
 
-    <section class="home__sec">
+    <section class="home__sec" id="home">
       <div class="container-fluid">
         <div class="container__hero">
           <h1 class="hero animate__animated animate__fadeInLeft">EMPEÑO Y CALIDAD EN PROYECTOS SOSTENIBLES</h1>
@@ -51,119 +51,162 @@
           <p>"Estamos listos para enfrentar nuevos desafíos y trabajar en conjunto para convertir sus ideas en realidad."</p>
         </blockquote>
         <figcaption class="blockquote-footer animate__animated animate__fadeInRight">
-          - <cite title="Source Title">Jorge Salamanca</cite>
+          - <cite title="Source Title">Jorge Salamanca, CEO.</cite>
         </figcaption>
       </article>
     </section>
 
-    <section class="services__sec">
-      <h2 class="title ">
-        Nuestros Servicios
-      </h2>
-      <div class="accordion">
-        <ul>
-          <li>
-            <div> <a href="#">
-              <h2>Servicio #n</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </a> </div>
-          </li>
-          <li>
-            <div> <a href="#">
-              <h2>Servicio #n</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </a> </div>
-          </li>
-          <li>
-            <div> <a href="#">
-              <h2>Servicio #n</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </a> </div>
-          </li>
-          <li>
-            <div> <a href="#">
-              <h2>Servicio #n</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </a> </div>
-          </li>
-          <li>
-            <div> <a href="#">
-              <h2>Servicio #n</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </a> </div>
-          </li>
-          <li>
-            <div> <a href="#">
-              <h2>Servicio #n</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </a> </div>
-          </li>
-        </ul>
+    <section class="services__sec" id="servicios">
+      <div class="services__content">
+        <div class="services__content-intro">
+          <h2 class="title ">
+            <span>Nuestros Servicios</span>
+          </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum optio veniam voluptate qui! Adipisci neque omnis non corporis dolor ea quos, officiis numquam? Vel porro expedita esse totam assumenda voluptas.</p>
+        </div>
+        <div class="services__content-accordion">
+          <div class="accordion">
+            <ul>
+              <li>
+                <div> <a href="#">
+                  <h2>Servicio #n</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a> </div>
+              </li>
+              <li>
+                <div> <a href="#">
+                  <h2>Servicio #n</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a> </div>
+              </li>
+              <li>
+                <div> <a href="#">
+                  <h2>Servicio #n</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a> </div>
+              </li>
+              <li>
+                <div> <a href="#">
+                  <h2>Servicio #n</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a> </div>
+              </li>
+              <li>
+                <div> <a href="#">
+                  <h2>Servicio #n</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a> </div>
+              </li>
+              <li>
+                <div> <a href="#">
+                  <h2>Servicio #n</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="advantages__sec">
-      <h2 class="title ">Ventajas de Trabajar con Nosotros</h2>
-      <div class="container">
-        <article class="adv__article">
-          <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
-        </article>
-        <figure class="adv__figure">
-          <img src="img/ceo.png" alt="CEO Ingeorbe" width="350px">
-        </figure>
+      <div class="advantages__content">
+        <div class="advantages__content-intro">
+          <h2 class="title "><span>Ventajas de Trabajar con Nosotros</span></h2>
+          <article class="adv__article">
+            <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+          </article>
+        </div>
+        <div class="advantages__content-figure">
+          <figure class="adv__figure">
+            <img src="img/ceo.png" alt="CEO Ingeorbe">
+          </figure>
+        </div>
       </div>
     </section>
 
     <section class="clients__sec">
-      <h2 class="title ">Nuestros clientes</h2>
-      <div class="container">
-        <figure class="logo_client_container">
-          <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-          <span>Cliente N</span>
-        </figure>
-        <figure class="logo_client_container">
-          <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-          <span>Cliente N</span>
-        </figure>
-        <figure class="logo_client_container">
-          <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-          <span>Cliente N</span>
-        </figure>
-        <figure class="logo_client_container">
-          <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-          <span>Cliente N</span>
-        </figure>
+      <div class="clients__content">
+        <div class="clients__content-intro">
+          <h2 class="title "><span>Nuestros clientes</span></h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum optio veniam voluptate qui! Adipisci neque omnis non corporis dolor ea quos, officiis numquam? Vel porro expedita esse totam assumenda voluptas.</p>
+        </div>
+        <div class="clients__content-logos">
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+          <figure class="logo_client_container">
+            <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
+            <span>Cliente N</span>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <section class="contact__sec">
-      <h2 class="title ">Contactanos</h2>
-      <div class="container">
-        <div class="contact_form">
-          <form action="" class="form">
-            <input type="hidden" sendto="omarurrego@omarurrego.com">
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre">
-            <label for="email">Correo electrónico: </label>
-            <input type="email" name="email">
-            <label for="telefono">Telefono: </label>
-            <input type="tel" name="telefono">
-            <label for="mensaje">Comentario: </label>
-            <input type="text" name="mensaje">
-            <button class="button button-4 hover-border-6">Submit</button>
-          </form>
-        </div>
-        <div class="location">
-          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ingeorbe&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+    <section class="contact__sec" id="contacto">
+      <div class="contact__content">
+        <div class="contact__content-intro">
+          <h2 class="title "><span>Contactanos</span></h2>
+          <div class="container">
+            <div class="contact_form">
+              <form action="" class="form">
+                <input type="hidden" sendto="omarurrego@omarurrego.com">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre">
+                <label for="email">Correo electrónico: </label>
+                <input type="email" name="email">
+                <label for="telefono">Telefono: </label>
+                <input type="tel" name="telefono">
+                <label for="mensaje">Mensaje: </label>
+                <input type="text" name="mensaje">
+                <div class="submit_container">
+                  <button class="btn-submit">Enviar</button>
+                </div>
+              </form>
+            </div>
         </div>
       </div>
+      <div class="contact__content-map">
+        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ingeorbe&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:100%!important;}</style></div>
+      </div>
+      </div>
     </section>
-
-  
-<hr>
 
     <section class="footer__sec">
-      <p class="lead">Ingeorbe 2023, Made by <a href="http://omarurrego.com">Omar T. Urrego</a></p>
+      <div class="footer__content">
+        <div class="footer__content-intro">
+          <p class="lead">Ingeorbe 2023, Made by <a href="http://omarurrego.com">Omar T. Urrego</a></p>
+        </div>
+      </div>
     </section>
 
 
