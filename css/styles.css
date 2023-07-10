@@ -9,21 +9,21 @@
   padding-bottom: 20px;
   margin: 1rem auto 3rem;
   width: 100%;
-  color: #254B63;
+  color: #146C94;
 }
 
 .title > span {
-  border-bottom: 2px solid #254B63;
+  border-bottom: 2px solid #146C94;
 }
 
 .btn > a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #F6F1F1;
 }
 
 .btn-standar > a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #F6F1F1;
 }
 
 /*** BUTTONS STYLES ***/
@@ -38,18 +38,6 @@
   border-style: none;
   border: none;
   background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-.button-container .btn {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  text-transform: uppercase;
-  padding: 10px 25px;
-  border-radius: 0;
-  border-style: none;
-  border: none;
-  background-color: blue;
   color: #fff;
   cursor: pointer;
 }
@@ -80,7 +68,7 @@
   margin: 10px 25px;
   border-radius: 0;
   border-style: none;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #F6F1F1;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
@@ -96,13 +84,13 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   transition: width 0.5s ease-in-out;
   z-index: -1;
 }
 
 .btn-standar:hover {
-  border-color: #3c6e71;
+  border-color: #AFD3E2;
 }
 
 .btn-standar:hover::before {
@@ -275,7 +263,7 @@ h2 {
 
 .navbar_bg {
   transition: 0.75s;
-  background-color: #254B63;
+  background-color: #146C94;
   z-index: 99;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
@@ -343,14 +331,14 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #353535;
+  background-color: #19A7CE;
 }
 
 .blockquote__sec .container_blockquote {
   width: 60%;
   flex-direction: column;
   text-align: center;
-  color: #d9d9d9;
+  color: #F6F1F1;
 }
 
 .blockquote__sec .container_blockquote .blockquote p {
@@ -375,7 +363,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: #F6F1F1;
 }
 
 .services__content {
@@ -411,7 +399,7 @@ h2 {
 
 .services__content-accordion {
   width: 50%;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   padding: 150px 80px;
 }
 
@@ -422,7 +410,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: #F6F1F1;
 }
 
 .advantages__content {
@@ -461,7 +449,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   padding: 100px;
 }
 
@@ -478,7 +466,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: #F6F1F1;
 }
 
 .clients__content {
@@ -514,7 +502,7 @@ h2 {
 
 .clients__content-logos {
   width: 50%;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   padding: 100px 80px;
   display: flex;
   flex-wrap: wrap;
@@ -528,7 +516,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #d9d9d9;
+  color: #F6F1F1;
   padding: 20px 40px;
 }
 
@@ -539,7 +527,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: #F6F1F1;
 }
 
 .contact__content {
@@ -635,13 +623,13 @@ input:focus {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   transition: width 0.5s ease-in-out;
   z-index: -1;
 }
 
 .btn-submit:hover {
-  border-color: #3c6e71;
+  border-color: #AFD3E2;
   color: #fff;
 }
 
@@ -654,7 +642,7 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   height: 700px;
 }
 
@@ -668,25 +656,23 @@ input:focus {
   align-items: center;
   margin: 0px auto;
   padding: 300px 0 10px;
-  background-color: #353535;
+  background-color: #19A7CE;
 }
 
 .footer__content-intro > p {
-  color: #d9d9d9;
+  color: #F6F1F1;
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
 }
 
 .footer__content-intro > p > a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #F6F1F1;
 }
 
 
 /****** MEDIA QUERIES *******/
 
 @media (min-width: 1180px) {
-  .container_blockquote {
-    max-width: 40%;
-  }
+
 }

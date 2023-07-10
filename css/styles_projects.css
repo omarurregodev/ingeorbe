@@ -9,21 +9,21 @@
   padding-bottom: 20px;
   margin: 1rem auto 3rem;
   width: 100%;
-  color: #254B63;
+  color: #146C94;
 }
 
 .title > span {
-  border-bottom: 2px solid #254B63;
+  border-bottom: 2px solid #146C94;
 }
 
 .btn > a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #F6F1F1;
 }
 
 .btn-standar > a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #F6F1F1;
 }
 
 /*** BUTTONS STYLES ***/
@@ -38,18 +38,6 @@
   border-style: none;
   border: none;
   background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-.button-container .btn {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  text-transform: uppercase;
-  padding: 10px 25px;
-  border-radius: 0;
-  border-style: none;
-  border: none;
-  background-color: blue;
   color: #fff;
   cursor: pointer;
 }
@@ -80,7 +68,7 @@
   margin: 10px 25px;
   border-radius: 0;
   border-style: none;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #F6F1F1;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
@@ -96,13 +84,13 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   transition: width 0.5s ease-in-out;
   z-index: -1;
 }
 
 .btn-standar:hover {
-  border-color: #3c6e71;
+  border-color: #AFD3E2;
 }
 
 .btn-standar:hover::before {
@@ -129,7 +117,7 @@ h2 {
 
 .navbar_bg {
   transition: 0.75s;
-  background-color: #254B63;
+  background-color: #146C94;
   z-index: 99;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
@@ -190,14 +178,13 @@ h2 {
 
 }
 
-
 /******** OUR PROJECTS SECTION ********/
 
 .projects__sec {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: #F6F1F1;
 }
 
 .projects__content {
@@ -236,9 +223,9 @@ h2 {
   color: #353535;
 }
 
-.projects__content-accordion {
+.projects__content-figure {
   width: 50%;
-  background-color: #3c6e71;
+  background-color: #AFD3E2;
   padding: 150px 80px;
 }
 
@@ -250,25 +237,22 @@ h2 {
   align-items: center;
   margin: 0px auto;
   padding: 300px 0 10px;
-  background-color: #353535;
+  background-color: #19A7CE;
 }
 
 .footer__content-intro > p {
-  color: #d9d9d9;
+  color: #F6F1F1;
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
 }
 
 .footer__content-intro > p > a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #F6F1F1;
 }
-
 
 /****** MEDIA QUERIES *******/
 
 @media (min-width: 1180px) {
-  .container_blockquote {
-    max-width: 40%;
-  }
+
 }
