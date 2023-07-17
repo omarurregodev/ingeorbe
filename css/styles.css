@@ -383,7 +383,7 @@ font-size: 30px;
 
 .container-figure {
   position: relative;
-  max-width: 650px;
+  max-width: 600px;
   padding: 10px;
   border: 5px solid #F7AA00;
 }
@@ -660,7 +660,7 @@ font-size: 30px;
 }
 
 .logos-slider {
-  max-width: 750px;
+  max-width: 600px;
   width: 100%;
 }
 
