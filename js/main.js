@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // DELAY UVP AND BLOCKQUOTE ANIMATION
-
+  
   setTimeout(() => {
     document.querySelector('.hero').classList.add('animate__fadeInLeft');
     document.querySelector('.hero').classList.remove('hidden');
@@ -8,10 +8,48 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.blockquote').classList.remove('hidden');
     document.querySelector('.blockquote-footer').classList.add('animate__fadeInRight');
     document.querySelector('.blockquote-footer').classList.remove('hidden');
-    document.querySelector('.img_hero').classList.add('animate__fadeInRight');
-    document.querySelector('.img_hero').classList.remove('hidden');
-    document.querySelector('.figure_slider').classList.add('fade-in');
+    document.querySelector('.container-figure').classList.add('fade-in');
   }, 1000);
+  
+  // SLICK
+  $(".slider__slick").slick({
+    dots: true,
+    vertical: false,
+    centerMode: true,
+    autoplay: true,
+    arrows: false,
+    pauseOnHover: true,
+    fade: true,
+    speed: 3000
+  });
+
+  $(".logos-slider").slick({
+    centerMode: true,
+    autoplay: true,
+    arrows: false,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
   // FUNCTION TO ADD CLASS TO THE NAVBAR WHEN IT SCROLL
   window.addEventListener('scroll', () => {
@@ -25,12 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.navbar').classList.add('navbar')
     }
   })
-
-  
   
 })
 
 function scrollToSection(sectionId) {
+  event.preventDefault();
   let section = document.getElementById(sectionId);
   section.scrollIntoView({ behavior: 'smooth' });
 }

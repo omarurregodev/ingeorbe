@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ingeorbe</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/buttons-css-hover/src/style.css">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@300;500&family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,600&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
   </head>
@@ -44,9 +48,18 @@
           <div class="container-uvp">
             <h1 class="hero animate__animated hidden">EMPEÑO Y CALIDAD EN PROYECTOS SOSTENIBLES</h1>
           </div>
-          <div class="container-figure">
+          <div class="container-figure animate__animated slider__slick slider ">
             <figure class="figure_slider">
-              <img class="img_hero animate__animated hidden" src="/img/slider_1.jpeg" alt="">
+              <img class="img_hero" src="/img/slider_1.jpeg" alt="">
+            </figure>
+            <figure class="figure_slider">
+              <img class="img_hero" src="/img/slider_2.jpeg" alt="">
+            </figure>
+            <figure class="figure_slider">
+              <img class="img_hero" src="/img/slider_3.jpeg" alt="">
+            </figure>
+            <figure class="figure_slider">
+              <img class="img_hero" src="/img/slider_4.webp" alt="">
             </figure>
           </div>
         </div>
@@ -140,46 +153,53 @@
       <section class="clients__sec">
         <div class="clients__content">
           <div class="clients__content-intro">
-            <h2 class="title "><span>Nuestros clientes</span></h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum optio veniam voluptate qui! Adipisci neque omnis non corporis dolor ea quos, officiis numquam? Vel porro expedita esse totam assumenda voluptas.</p>
+            <h3 class="subtitle">Con Quienes</h3>
+            <h2 class="title">
+              <span>Hemos <br> Trabajado</span>
+            </h2>
+            <article>
+              <p class="copy_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum optio veniam voluptate qui! Adipisci neque omnis non corporis dolor ea quos, officiis numquam? Vel porro expedita esse totam assumenda voluptas.</p>
+            </article>
           </div>
           <div class="clients__content-logos">
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
-            <figure class="logo_client_container">
-              <img src="img/Logo_omar.svg" width="110px" alt="logo_cliente_n">
-              <span>Cliente N</span>
-            </figure>
+            <div class="logos-slider slider">
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+                            <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+              <figure class="logo_client_container">
+                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
+                <span>Cliente N</span>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -187,6 +207,7 @@
       <section class="contact__sec" id="contacto">
         <div class="contact__content">
           <div class="contact__content-intro">
+            <h3 class="subtitle">Tienes preguntas?</h3>
             <h2 class="title "><span>Contactanos</span></h2>
             <div class="container">
               <div class="contact_form">
@@ -216,9 +237,24 @@
 
     <footer class="footer__sec">
       <div class="footer__content">
-        <div class="footer__content-intro">
-          <p class="lead">Ingeorbe 2023, Made by <a href="http://omarurrego.com">Omar T. Urrego</a></p>
+        <div class="footer__content-info">
+          <h3 class="subtitle">Donde nos encuentras</h3>
+          <p>Ingeorbe SAS</p>
+          <p>Tel: +57 322 897 09 09</p>
+          <p>Calle 134 #17 - 16</p>
+          <p>Bogotá D.C, Colombia</p>
         </div>
+        <div class="footer__content-navigation">
+          <ul>
+            <li><a href="" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="" onclick="scrollToSection('servicios')">Servicios</a></li>
+            <li><a href="/projects.html">Proyectos</a></li>
+            <li><a href="" onclick="scrollToSection('contacto')">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__content-copyright">
+        <p class="lead">Ingeorbe 2023, Made by <a href="http://omarurrego.com" target="_blank">Omar T. Urrego</a></p>
       </div>
     </footer>
 
@@ -235,5 +271,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="/slick-1.8.1/slick/slick.js"></script>
   </body>
 </html>
