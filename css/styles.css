@@ -898,7 +898,7 @@ input:focus {
       & a {
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.075rem;
+        font-size: 1.175rem;
         color: #fff;
         text-transform: capitalize;
       }
