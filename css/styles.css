@@ -932,6 +932,222 @@ input:focus {
 }
 
 
+
+/***************** PAGE PROJECTS ******************/
+
+/* HERO SECTION */
+
+.home__sec-projects .container-fluid-projects {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #BCDBDF;
+}
+
+.container-fluid-projects::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  clip-path: polygon(25% 0%, 75% 0, 90% 51%, 75% 100%, 25% 100%, 10% 51%);
+  background-color: #40A8C4;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.home__sec-projects .container-fluid-projects .container-uvp {
+  width: 45%;
+}
+
+.home__sec-projects .container-fluid-projects .container-uvp h1 {
+  padding-left: 30%;
+  color: #235784;
+  font-family: 'Pathway Extreme', sans-serif;
+  font-size: 65px;
+  text-align: left;
+}
+
+.home__sec-projects .container-fluid-projects .container-figure {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container-figure {
+  position: relative;
+  max-width: 600px;
+  padding: 10px;
+  border: 5px solid #F7AA00;
+}
+.img_hero {
+  width: 100%;
+}
+
+.container-figure:before {
+  content: '';
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  display: block;
+  bottom: -22px;
+  left: -40px;
+  z-index: -1;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #F7AA00;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.container-figure.fade-in:before {
+  opacity: 1;
+}
+
+/******** PROJECTS SECTION ********/
+
+.projects__sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.projects__content-right {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.projects__content-right:before {
+  background-color: #40A8C4;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 85%;
+  height: 70%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: auto 0;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.projects__content-right-intro {
+  width: 45%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.projects__content-right-intro > .title{
+  text-align: left;
+}
+.projects__content-right-intro > .subtitle{
+  margin-left: 0;
+}
+
+.projects__content-right-intro > article > .copy_text {
+  text-align: left;
+  font-family: 'Pathway', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  width: 80%;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  color: #000;
+}
+
+.projects__content-right-figure {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 60px 100px 30px;
+}
+
+.projects__content-right-figure > .adv__figure > img {
+  width: 400px;
+}
+
+.projects__content-left {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.projects__content-left:before {
+  background-color: #40A8C4;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 85%;
+  height: 70%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: auto 0;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.projects__content-left-intro {
+  width: 45%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.projects__content-left-intro > .title{
+  text-align: right;
+}
+.projects__content-left-intro > .subtitle{
+  margin-left: 0;
+}
+
+.projects__content-left-intro > article {
+  display: contents;
+  & article {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  .copy_text {
+    margin: 0;
+    text-align: right;
+    font-family: 'Pathway', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    width: 80%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: #000;
+  }
+}
+
+.projects__content-left-figure {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 60px 100px 30px;
+}
+
+.projects__content-left-figure > .adv__figure > img {
+  width: 400px;
+}
+
+
 /****** MEDIA QUERIES *******/
 
 @media (min-width: 1180px) {

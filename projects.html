@@ -25,16 +25,16 @@
           <img src="img/logo.png" alt="Logo_ingeorbe" width="auto" height="50">
         </div>
         <div class="button-container-navbar">
-          <button class="btn" onclick="scrollToSection('home')">
+          <button class="btn" onclick="goHome()">
             <span>Inicio</span>
           </button>
           <span> | </span>
-          <button class="btn" onclick="scrollToSection('servicios')">
+          <button class="btn" onclick="goServices()">
             <span>Servicios</span>
           </button>
           <span> | </span>
           <button class="btn">
-            <a href="/projects.html"><span>Proyectos</span></a>
+            <a href="#"><span>Proyectos</span></a>
           </button>
         </div>
         <div class="button-container">
@@ -43,10 +43,10 @@
           </button>
         </div>
       </nav>
-      <section class="home__sec" id="home">
-        <div class="container-fluid">
+      <section class="home__sec-projects" id="home_projects">
+        <div class="container-fluid-projects">
           <div class="container-uvp">
-            <h1 class="hero animate__animated hidden">EMPEÑO Y CALIDAD EN PROYECTOS SOSTENIBLES</h1>
+            <h1 class="hero animate__animated hidden">NUESTROS PROYECTOS</h1>
           </div>
           <div class="container-figure animate__animated slider__slick slider ">
             <figure class="figure_slider">
@@ -66,144 +66,93 @@
       </section>
     </header>
     <main class="content">
-      <section class="blockquote__sec">
-        <article class="container_blockquote">
-          <blockquote class="blockquote animate__animated hidden">
-            <p>"Estamos listos para enfrentar nuevos desafíos y trabajar en conjunto para convertir sus ideas en realidad."</p>
-          </blockquote>
-          <figcaption class="blockquote-footer animate__animated hidden">
-            - <cite title="Source Title">Jorge Salamanca, CEO.</cite>
-          </figcaption>
-        </article>
-      </section>
-  
-      <section class="services__sec" id="servicios">
-        <div class="services__content">
-          <div class="hidden services__content-intro animate__animated">
-            <h3 class="subtitle">Ofrecemos</h3>
-            <h2 class="title ">
-              <span>Nuestros <br> Servicios</span>
-            </h2>
-            <article>
-              <p class="copy_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum optio veniam voluptate qui! Adipisci neque omnis non corporis dolor ea quos, officiis numquam? Vel porro expedita esse totam assumenda voluptas.</p>
-            </article>
-          </div>
-          <div class="services__content-accordion">
-            <div class="accordion">
-              <ul>
-                <li>
-                  <div> <a href="#">
-                    <h2>Servicio #n</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </a> </div>
-                </li>
-                <li>
-                  <div> <a href="#">
-                    <h2>Servicio #n</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </a> </div>
-                </li>
-                <li>
-                  <div> <a href="#">
-                    <h2>Servicio #n</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </a> </div>
-                </li>
-                <li>
-                  <div> <a href="#">
-                    <h2>Servicio #n</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </a> </div>
-                </li>
-                <li>
-                  <div> <a href="#">
-                    <h2>Servicio #n</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </a> </div>
-                </li>
-                <li>
-                  <div> <a href="#">
-                    <h2>Servicio #n</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </a> </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-      <section class="advantages__sec">
-        <div class="advantages__content">
-          <div class="advantages__content-figure">
+      <section class="projects__sec">
+        <div class="projects__content-right">
+          <div class="projects__content-right-figure">
             <figure class="adv__figure">
               <img src="img/ceo.png" alt="CEO Ingeorbe">
             </figure>
           </div>
-          <div class="hidden advantages__content-intro animate__animated">
-            <h3 class="subtitle">Quienes</h3>
-            <h2 class="title"><span>Somos <br> Nosotros</span></h2>
+          <div class="hidden projects__content-right-intro animate__animated">
+            <h3 class="subtitle">Proyecto #1</h3>
+            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
+            <article class="adv__article">
+              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+            </article>
+          </div>
+        </div>
+        <div class="projects__content-left">
+          <div class="projects__content-left-figure">
+            <figure class="adv__figure">
+              <img src="img/ceo.png" alt="CEO Ingeorbe">
+            </figure>
+          </div>
+          <div class="hidden projects__content-left-intro animate__animated">
+            <h3 class="subtitle">Proyecto #2</h3>
+            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
+            <article class="adv__article">
+              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+            </article>
+          </div>
+        </div>
+        <div class="projects__content-right">
+          <div class="projects__content-right-figure">
+            <figure class="adv__figure">
+              <img src="img/ceo.png" alt="CEO Ingeorbe">
+            </figure>
+          </div>
+          <div class="hidden projects__content-right-intro animate__animated">
+            <h3 class="subtitle">Proyecto #3</h3>
+            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
+            <article class="adv__article">
+              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+            </article>
+          </div>
+        </div>
+        <div class="projects__content-left">
+          <div class="projects__content-left-figure">
+            <figure class="adv__figure">
+              <img src="img/ceo.png" alt="CEO Ingeorbe">
+            </figure>
+          </div>
+          <div class="hidden projects__content-left-intro animate__animated">
+            <h3 class="subtitle">Proyecto #4</h3>
+            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
+            <article class="adv__article">
+              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+            </article>
+          </div>
+        </div>
+        <div class="projects__content-right">
+          <div class="projects__content-right-figure">
+            <figure class="adv__figure">
+              <img src="img/ceo.png" alt="CEO Ingeorbe">
+            </figure>
+          </div>
+          <div class="hidden projects__content-right-intro animate__animated">
+            <h3 class="subtitle">Proyecto #5</h3>
+            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
+            <article class="adv__article">
+              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+            </article>
+          </div>
+        </div>
+        <div class="projects__content-left">
+          <div class="projects__content-left-figure">
+            <figure class="adv__figure">
+              <img src="img/ceo.png" alt="CEO Ingeorbe">
+            </figure>
+          </div>
+          <div class="hidden projects__content-left-intro animate__animated">
+            <h3 class="subtitle">Proyecto #6</h3>
+            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
             <article class="adv__article">
               <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
             </article>
           </div>
         </div>
       </section>
-  
-      <section class="clients__sec">
-        <div class="clients__content">
-          <div class="hidden clients__content-intro animate__animated">
-            <h3 class="subtitle">Con Quienes</h3>
-            <h2 class="title">
-              <span>Hemos <br> Trabajado</span>
-            </h2>
-            <article>
-              <p class="copy_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum optio veniam voluptate qui! Adipisci neque omnis non corporis dolor ea quos, officiis numquam? Vel porro expedita esse totam assumenda voluptas.</p>
-            </article>
-          </div>
-          <div class="clients__content-logos">
-            <div class="logos-slider slider">
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-                            <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n">
-                <span>Cliente N</span>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-  
+
       <section class="contact__sec" id="contacto">
         <div class="contact__content">
           <div class="contact__content-intro">
@@ -233,6 +182,7 @@
         </div>
         </div>
       </section>
+  
     </main>
 
     <footer class="footer__sec">
@@ -246,9 +196,9 @@
         </div>
         <div class="footer__content-navigation">
           <ul>
-            <li><a href="" onclick="scrollToSection('home')">Inicio</a></li>
-            <li><a href="" onclick="scrollToSection('servicios')">Servicios</a></li>
-            <li><a href="/projects.html">Proyectos</a></li>
+            <li><a href="" onclick="goHome()">Inicio</a></li>
+            <li><a href="" onclick="goServices()">Servicios</a></li>
+            <li><a href="" onclick="scrollToSection('home_projects')">Proyectos</a></li>
             <li><a href="" onclick="scrollToSection('contacto')">Contacto</a></li>
           </ul>
         </div>

@@ -71,3 +71,31 @@ function scrollToSection(sectionId) {
   let section = document.getElementById(sectionId);
   section.scrollIntoView({ behavior: 'smooth' });
 }
+
+function goHome() {
+  window.location.href = "/index.html";
+}
+function goServices() {
+  window.location.href = "/index.html#servicios";
+}
+
+function detectScrollPosition() {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 390) {
+    document.querySelector('.services__content-intro').classList.add('animate__fadeInLeft')
+    document.querySelector('.services__content-intro').classList.remove('hidden')
+  }
+  if (scrollPosition > 900) {
+    document.querySelector('.advantages__content-intro').classList.add('animate__fadeInRight')
+    document.querySelector('.advantages__content-intro').classList.remove('hidden')
+  }
+  if (scrollPosition > 1600) {
+    document.querySelector('.clients__content-intro').classList.add('animate__fadeInLeft')
+    document.querySelector('.clients__content-intro').classList.remove('hidden')
+  }
+}
+
+// Attach the event listener to the 'scroll' event
+window.addEventListener("scroll", detectScrollPosition);
