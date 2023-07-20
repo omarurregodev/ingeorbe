@@ -97,5 +97,4 @@ function detectScrollPosition() {
   }
 }
 
-// Attach the event listener to the 'scroll' event
 window.addEventListener("scroll", detectScrollPosition);
