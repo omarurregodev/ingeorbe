@@ -73,10 +73,10 @@ function scrollToSection(sectionId) {
 }
 
 function goHome() {
-  window.location.href = "/index.html";
+  window.location.href = "index.html";
 }
 function goServices() {
-  window.location.href = "/index.html#servicios";
+  window.location.href = "index.html#servicios";
 }
 
 function detectScrollPosition() {
