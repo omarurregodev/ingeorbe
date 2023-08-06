@@ -11,6 +11,10 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
       href="http://www.cssscript.com/wp-includes/css/sticky.css"
       rel="stylesheet"
       type="text/css"
@@ -28,11 +32,12 @@
       href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@300;500&family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,600&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
@@ -104,6 +109,22 @@
         </article>
       </section>
 
+      <section class="vision__sec">
+        <div class="vision__content">
+          <h3 class="subtitle">Nuestra</h3>
+          <h2 class="title">Visión</h2>
+          <p class="copy_text">
+            Somos una empresa conformada por un equipo profesional de ingenieros
+            especializados que cuentan con más de 20 años de experiencia en el
+            desarrollo de proyectos de ingeniería civil y arquitectura,
+            participando en la Dirección, Supervisión y Ejecución de las etapas
+            de Estructuración, Diseño y Planificación de proyectos relacionados
+            con la Infraestructura vial, transporte, movilidad y seguridad vial,
+            entre otros. 
+          </p>
+        </div>
+      </section>
+
       <section class="services__sec" id="servicios">
         <div class="services__content">
           <div class="hidden services__content-intro animate__animated">
@@ -116,10 +137,7 @@
             </h2>
             <article>
               <p class="copy_text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                optio veniam voluptate qui! Adipisci neque omnis non corporis
-                dolor ea quos, officiis numquam? Vel porro expedita esse totam
-                assumenda voluptas.
+                Nuestro compromiso es ofrecer servicios de Ingeniería y Arquitectura que cumplan con las expectativas de nuestros clientes y que contribuyan al desarrollo de proyectos exitosos.
               </p>
             </article>
           </div>
@@ -225,51 +243,68 @@
             </h2>
             <article>
               <p class="copy_text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                optio veniam voluptate qui! Adipisci neque omnis non corporis
-                dolor ea quos, officiis numquam? Vel porro expedita esse totam
-                assumenda voluptas.
+                Nos destacamos por nuestra pasión, por el éxito de nuestros clientes y por brindarles soluciones innovadoras en sus proyectos.
               </p>
             </article>
           </div>
-          <div class="clients__content-logos">
-            <div class="logos-slider slider">
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
-              <figure class="logo_client_container">
-                <img src="img/Logo_omar.svg" alt="logo_cliente_n" />
-                <span>Cliente N</span>
-              </figure>
+          <div class="clients__content-logos swiper mySwiper">
+            <div class="logos-slider swiper-wrapper">
+              <div class="logo_client_container swiper-slide">
+                <img src="img/logo_caf.png" alt="logo CAF" width="200px" />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img
+                  src="img/logo_cdm.png"
+                  alt="logo CDM Smith"
+                  width="200px"
+                />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img
+                  src="img/logo_fondo_adap.png"
+                  alt="logo fondo de adaptación"
+                  width="200px"
+                />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img src="img/logo_idu.png" alt="logo IDU" width="200px" />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img
+                  src="img/logo_ingeominas.png"
+                  alt="logo Ingeominas"
+                  width="200px"
+                />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img
+                  src="img/logo_kennedy.png"
+                  alt="logo alcaldía local de Kennedy"
+                  style="width: 120px !important;"
+                />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img
+                  src="img/logo_min_obras.png"
+                  alt="logo Ministerio de Obras Públicas y Comunicaciones"
+                  width="200px"
+                />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img
+                  src="img/logo_mintrans.png"
+                  alt="logo Ministerio de Transporte"
+                  width="200px"
+                />
+              </div>
+              <div class="logo_client_container swiper-slide">
+                <img
+                  src="img/logo_nacional.png"
+                  alt="logo Universidad Nacional"
+                  width="200px"
+                />
+                <span> </span>
+              </div>
             </div>
           </div>
         </div>
@@ -278,15 +313,21 @@
       <section class="contact__sec" id="contacto">
         <div class="contact__content">
           <div class="contact__content-title">
-            <h2><span>¿Quieres Contactar <br> con Nosotros?</span></h2>
+            <h2>
+              <span
+                >¿Quieres Contactar <br />
+                con Nosotros?</span
+              >
+            </h2>
           </div>
           <div class="contact__content-phone">
             <h3>Llamanos:</h3>
-            <p>Tel: +57 322 897 09 09</p>
+            <p>Tel: 601 304 31 57</p>
+            <p>Cel: +57 300 556 24 52</p>
           </div>
           <div class="contact__content-email">
             <h3>Escribe a:</h3>
-            <p><a href="mailto:info@ingeorbe.com">info@ingeorbe.com</a></p>
+            <p><a href="mailto:dir.ejecutivo@ingeorbe.page">dir.ejecutivo@ingeorbe.page</a></p>
           </div>
         </div>
       </section>
@@ -296,29 +337,36 @@
       <div class="footer__content">
         <div class="footer__content-logo">
           <img
-          src="img/logo.png"
-          alt="Logo_ingeorbe"
-          width="auto"
-          height="70"
-        />
+            src="img/logo.png"
+            alt="Logo_ingeorbe"
+            width="auto"
+            height="70"
+          />
         </div>
-       
+
         <div class="footer__content-us">
           <h3 class="subtitle">Sobre Nosotros</h3>
-          <p>Somos una empresa conformada por un equipo profesional  de ingenieros especializados que cuentan con más de 20 años  de experiencia en el desarrollo de proyectos de ingeniería  civil y arquitectura, participando en la Dirección, Supervisión  y Ejecución de las etapas de Estructuración, Diseño y Planificación de proyectos relacionados con la Infraestructura vial, transporte, movilidad y seguridad vial, entre otros. 
+          <p>
+            Somos una empresa conformada por un equipo profesional de ingenieros
+            especializados que cuentan con más de 20 años de experiencia en el
+            desarrollo de proyectos de ingeniería civil y arquitectura,
+            participando en la Dirección, Supervisión y Ejecución de las etapas
+            de Estructuración, Diseño y Planificación de proyectos relacionados
+            con la Infraestructura vial, transporte, movilidad y seguridad vial,
+            entre otros. 
           </p>
         </div>
         <div class="footer__content-info">
           <h3 class="subtitle">Contacto</h3>
-          <p>Ingeorbe SAS</p>
-          <p>Calle 134 #17 - 16</p>
+          <!-- <p>Ingeorbe SAS</p> -->
+          <p>Calle 74 # 15 - 80, INT 1 OF 619</p>
           <p>Bogotá D.C, Colombia</p>
         </div>
       </div>
       <div class="footer__content-copyright">
         <p class="lead">
           Ingeorbe 2023, Made by
-          <a href="http://omarurrego.com" target="_blank">Omar T. Urrego</a>
+          <a href="http://www.omarurrego.com" target="_blank">Omar T. Urrego</a>
         </p>
       </div>
     </footer>
@@ -335,6 +383,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
   </body>
 </html>
