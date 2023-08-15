@@ -46,7 +46,7 @@ body {
   height: 600px;
   bottom: 150px;
   left: 0;
-  background-image: url('/img/Mundo_INGEORBE_esquina.png');
+  background-image: url('img/Mundo_INGEORBE_esquina.png');
   background-size: cover;
   z-index: -999;
 }
@@ -59,7 +59,7 @@ body {
   top: 0;
   right: 0;
   transform: rotate(180deg);
-  background-image: url('/img/Mundo_INGEORBE_esquina.png');
+  background-image: url('img/Mundo_INGEORBE_esquina.png');
   background-size: cover;
   z-index: -999;
 }
@@ -1369,7 +1369,7 @@ h2 {
     height: 400px;
     bottom: 150px;
     left: 0;
-    background-image: url('/img/Mundo_INGEORBE_esquina.png');
+    background-image: url('img/Mundo_INGEORBE_esquina.png');
     background-size: cover;
     z-index: -999;
   }
@@ -1382,7 +1382,7 @@ h2 {
     top: 0;
     right: 0;
     transform: rotate(180deg);
-    background-image: url('/img/Mundo_INGEORBE_esquina.png');
+    background-image: url('img/Mundo_INGEORBE_esquina.png');
     background-size: cover;
     z-index: -999;
   }
