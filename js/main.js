@@ -23,13 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 3000
   });
 
-  // $(".logos-slider").slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   arrows: false
-  // });
+  var swiper_services = new Swiper(".services__slider", {
+    cssMode: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   const swiper = new Swiper(".mySwiper", {
     effect: "flip",
     grabCursor: true,
@@ -38,6 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
   });
+
+
 
   // FUNCTION TO ADD CLASS TO THE NAVBAR WHEN IT SCROLL
   window.addEventListener('scroll', () => {

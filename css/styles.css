@@ -607,17 +607,48 @@ h2 {
 
 .services__content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  & .title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 42px;
+  }
+  & .subtitle {
+    color: #30475E;
+  }
+  & .swiper {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 400px;
+  
+    & .arrows-control {
+      position: absolute;
+      bottom: 5%;
+      left: 34%;
+      width: 150px;
+      height: 50px;
+      z-index: 100;
+      & .swiper-button-prev:after, .swiper-button-next:after {
+        color: #C1A57B;
+        transform: scale(0.5);
+      }
+    }
+  }
 }
 
-.services__content:before {
+.services__slider:before {
   background-color: #30475E;
   position: absolute;
   display: block;
   content: '';
   width: 95%;
-  height: 90%;
+  height: 100%;
   bottom: 0;
   top: 0;
   right: 0;
@@ -632,7 +663,7 @@ h2 {
   display: block;
   content: '';
   width: 95%;
-  height: 115%;
+  height: 110%;
   bottom: 0;
   top: 0;
   left: 0;
@@ -642,6 +673,16 @@ h2 {
   opacity: 0.5;
 }
 
+.services__slider {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 30px 0;
+  position: relative;
+}
+
+
 .services__content-intro {
   width: 45%;
   padding: 0 0 0 100px;
@@ -649,7 +690,38 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  & .subtitle {
+    padding-bottom: 3rem;
+    font-size: 30px;
+    color: #AFD3E2;
+  }
+  & article .copy_text {
+    text-align: right;
+    font-family: 'Pathway', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    width: 80%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: #DDE6ED;
+  }
 }
+
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .services__content-intro>.title {
   text-align: right;
@@ -659,25 +731,13 @@ h2 {
   display: contents;
 }
 
-.services__content-intro>article>.copy_text {
-  text-align: right;
-  font-family: 'Pathway', sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  width: 60%;
-  font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 25px;
-  color: #DDE6ED;
-}
-
-.services__content-accordion {
+.services__content-figure {
   width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  padding: 100px;
+  padding-left: 100px;
 }
 
 
@@ -1422,43 +1482,101 @@ h2 {
 
 
   /******** OUR SERVICES SECTION ********/
-
-  .services__content:before {
-    width: 100%;
-    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
+  
+  .services__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    & .title {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-size: 42px;
+    }
+    & .subtitle {
+      color: #30475E;
+    }
+    & .swiper {
+      max-height: 500px;
+    
+      & .arrows-control {
+        left: 27%;
+        & .swiper-button-prev:after, .swiper-button-next:after {
+          color: #C1A57B;
+          transform: scale(0.5);
+        }
+      }
+    }
   }
-
+  
+  .services__slider:before {
+    width: 100%;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+  }
+  
   .services__content:after {
     width: 100%;
+    clip-path: polygon(0% 0%, 83% 0%, 100% 50%, 83% 100%, 0% 100%);
   }
-
-  .services__content-intro>article>.copy_text {
+  
+  .services__slider {
+    display: flex;
+    position: relative;
     width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    position: relative;
+  }
+  
+  
+  .services__content-intro {
+    padding: 80px 0;
+    & .subtitle {
+      color: #AFD3E2;
+    }
+    & article .copy_text {
+      width: 85%;
+    }
+  }
+  
+  .swiper-wrapper {
+    height: 100%;
+  }
+  
+  .services__content-figure {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-left: 60px;
+    & img {
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   /******** ADVANTAGES SECTION ********/
 
   .advantages__content:before {
     width: 100%;
-    clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%) !important;
   }
 
   .advantages__content:after {
     width: 100%;
   }
-
+  .advantages__content-intro {
+    padding: 70px 0;
+  }
   .advantages__content-intro>article>.copy_text {
-    width: 70%;
+    width: 80%;
   }
-
-  .advantages__content-figure {
-    /* padding: 60px 60px 30px; */
-  }
-
-  .advantages__content-figure>.adv__figure>img {
-    /* width: 300px; */
-  }
-
 
   /******** CLIENTS SECTION ********/
 
@@ -1625,21 +1743,73 @@ h2 {
   /******** OUR SERVICES SECTION ********/
 
   .services__sec {
-    display: none;
+    & .swiper {
+    max-height: 680px;
+  
+    & .arrows-control {
+      bottom: 10%;
+      left: 32%;
+    }
   }
-
-  .services__content:before {
+  }
+  .services__slider:before {
+    background-color: #30475E;
+    position: absolute;
+    display: block;
+    content: '';
     width: 100%;
-    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    margin: auto 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
   }
-
   .services__content:after {
-    width: 100%;
+    content: none;
   }
-
-  .services__content-intro>article>.copy_text {
+  
+  .services__content-intro {
     width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+    & .subtitle {
+      padding: 2rem 0;
+      font-size: 30px;
+      color: #AFD3E2;
+    }
+    & article .copy_text {
+      text-align: center;
+    }
   }
+  
+  .swiper-slide {
+    flex-direction: column-reverse !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services__content-figure {
+    width: 100%;
+    padding-left: 0;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      z-index: 100;
+      border: 2px solid #C1A57B;
+    }
+  } 
 
   /******** ADVANTAGES SECTION ********/
 
