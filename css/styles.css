@@ -24,7 +24,7 @@ body {
   height: 600px;
   bottom: 150px;
   left: 0;
-  background-image: url('img/mundo_ingeorbe.png');
+  background-image: url('../img/mundo_ingeorbe.png');
   background-size: cover;
   z-index: -999;
 }
@@ -37,7 +37,7 @@ body {
   top: 0;
   right: 0;
   transform: rotate(180deg);
-  background-image: url('img/mundo_ingeorbe.png');
+  background-image: url('../img/mundo_ingeorbe.png');
   background-size: cover;
   z-index: -999;
 }
@@ -1347,7 +1347,7 @@ h2 {
     height: 400px;
     bottom: 150px;
     left: 0;
-    background-image: url('img/mundo_ingeorbe.png');
+    background-image: url('../img/mundo_ingeorbe.png');
     background-size: cover;
     z-index: -999;
   }
@@ -1360,7 +1360,7 @@ h2 {
     top: 0;
     right: 0;
     transform: rotate(180deg);
-    background-image: url('img/mundo_ingeorbe.png');
+    background-image: url('../img/mundo_ingeorbe.png');
     background-size: cover;
     z-index: -999;
   }
