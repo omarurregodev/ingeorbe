@@ -17,28 +17,6 @@ body {
   display: none;
 }
 
-/* .content:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: #222831;
-  clip-path: polygon(75% 0%, 100% 0%, 25% 100%, 0% 100%);
-} */
-/* .content:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -5;
-  background-color: #222831;
-  clip-path: polygon(0 0, 25% 0, 100% 100%, 75% 100%);
-} */
 .content::before {
   content: '';
   position: absolute;
