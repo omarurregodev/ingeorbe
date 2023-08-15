@@ -1565,7 +1565,7 @@ h2 {
 
   .advantages__content:before {
     width: 100%;
-    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%) !important;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
   }
 
   .advantages__content:after {
@@ -1593,6 +1593,8 @@ h2 {
   .clients__content-intro>article>.copy_text {
     width: 80%;
   }
+
+  
 
 
   /****** CONTACT SECTION *****/
