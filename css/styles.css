@@ -539,7 +539,7 @@ h2 {
   align-items: end;
 
   & .subtitle {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     font-size: 30px;
     color: #AFD3E2;
   }
