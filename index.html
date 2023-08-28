@@ -44,13 +44,15 @@
     <header>
       <nav class="navbar">
         <div class="logo-container">
-          <img
-          class="logo_svg"
-            src="img/logo.png"
-            alt="Logo_ingeorbe"
-            width="auto"
-            
-          />
+          <a href="/index.html">
+            <img
+            class="logo_svg"
+              src="img/logo.png"
+              alt="Logo_ingeorbe"
+              width="auto"
+              
+            />
+          </a>
         </div>
         <div class="button-container-navbar">
           <button class="btn" onclick="scrollToSection('home')">
@@ -73,72 +75,45 @@
       </nav>
       <section class="home__sec" id="home">
         <div class="container-fluid">
+          <div class="container-filter"></div>
           <div class="container-uvp">
             <h1 class="hero animate__animated hidden">
-              CONSTRUYENDO UN FUTURO SOSTENIBLE CON COMPROMISO Y CALIDAD
+              Ingeniería Civil de Excelencia <br>
+              <span>Empeño en cada detalle, compromiso con cada proyecto</span>
             </h1>
             <button class="btn-standar-mobile" onclick="scrollToSection('contacto')">
               <span>Contacto</span>
             </button>
           </div>
-          <div class="container-figure animate__animated slider__slick slider">
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_1.jpeg" alt="" />
-            </figure>
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_2.jpeg" alt="" />
-            </figure>
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_3.jpeg" alt="" />
-            </figure>
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_4.webp" alt="" />
-            </figure>
-          </div>
         </div>
       </section>
     </header>
     <main class="content">
-      <section class="blockquote__sec">
-        <article class="container_blockquote">
-          <blockquote class="blockquote animate__animated hidden">
-            <p>
-              "Estamos listos para enfrentar nuevos desafíos y trabajar en
-              conjunto para convertir sus ideas en realidad."
-            </p>
-          </blockquote>
-          <figcaption class="blockquote-footer animate__animated hidden">
-            - <cite title="Source Title">Jorge Salamanca, CEO.</cite>
-          </figcaption>
-        </article>
-      </section>
 
       <section class="vision__sec">
         <div class="vision__content">
           <h3 class="subtitle">Nuestra</h3>
           <h2 class="title">Visión</h2>
           <p class="copy_text">
-            Somos una empresa conformada por un equipo profesional de ingenieros
-            especializados que cuentan con más de 20 años de experiencia en el
-            desarrollo de proyectos de ingeniería civil y arquitectura,
-            participando en la Dirección, Supervisión y Ejecución de las etapas
-            de Estructuración, Diseño y Planificación de proyectos relacionados
-            con la Infraestructura vial y de transporte. 
+            En Ingeorbe nos interesa redefinir los estándares de la ingeniería civil en Colombia. Valoramos la confianza de nuestros clientes y nos comprometemos a brindar un trato cercano y comunicación abierta en cada etapa de un proyecto. Siendo reconocidos por nuestra transparencia, aspiramos a ser la opción preferida para empresas de construcción y visionarios que buscan realizar proyectos de ingeniería que impacten positivamente nuestro entorno. 
           </p>
+          <button class="btn-project-mobile" onclick="goToProjects()">
+            <span>Proyectos</span>
+          </button>
         </div>
       </section>
 
       <section class="services__sec" id="servicios">
         <div class="services__content">
-          <h3 class="subtitle">Ofrecemos</h3>
+          <h3 class="subtitle service_align">Nuestros</h3>
           <h2 class="title">
-            <span>Nuestros Servicios</span>
+            <span>Servicios</span>
           </h2>
           <div class="services__slider swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="hidden services__content-intro animate__animated">
-                    <h3 class="subtitle">Service #1</h3>
+                    <h3 class="subtitle">Consultoría</h3>
                     <article>
                       <p class="copy_text">
                         Nuestro compromiso es ofrecer servicios de Ingeniería y Arquitectura que cumplan con las expectativas de nuestros clientes y que contribuyan al desarrollo de proyectos exitosos.
@@ -153,7 +128,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="hidden services__content-intro animate__animated">
-                    <h3 class="subtitle">Service #2</h3>
+                    <h3 class="subtitle">Interventoría</h3>
                     <article>
                       <p class="copy_text">
                         Nuestro compromiso es ofrecer servicios de Ingeniería y Arquitectura que cumplan con las expectativas de nuestros clientes y que contribuyan al desarrollo de proyectos exitosos.
@@ -168,7 +143,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="hidden services__content-intro animate__animated">
-                    <h3 class="subtitle">Service #3</h3>
+                    <h3 class="subtitle">Asesoría Técnica</h3>
                     <article>
                       <p class="copy_text">
                         Nuestro compromiso es ofrecer servicios de Ingeniería y Arquitectura que cumplan con las expectativas de nuestros clientes y que contribuyan al desarrollo de proyectos exitosos.
@@ -183,7 +158,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="hidden services__content-intro animate__animated">
-                    <h3 class="subtitle">Service #4</h3>
+                    <h3 class="subtitle">Gestión y Seguimiento de Proyectos</h3>
                     <article>
                       <p class="copy_text">
                         Nuestro compromiso es ofrecer servicios de Ingeniería y Arquitectura que cumplan con las expectativas de nuestros clientes y que contribuyan al desarrollo de proyectos exitosos.
@@ -217,9 +192,7 @@
             <h2 class="title"><span>Somos </span></h2>
             <article class="adv__article">
               <p class="copy_text">
-                "Trabajamos de la mano con ustedes, estableciendo una relación
-                sólida y de confianza, para poder desarrollar estrategias
-                personalizadas que maximicen los resultados de los proyectos."
+                Somos una empresa conformada por un equipo profesional de ingenieros especializados que cuentan con más de 20 años de experiencia en el desarrollo de proyectos de ingeniería civil y arquitectura, participando en la dirección, supervisión y ejecución de las etapas de estructuración, diseño y planificación de proyectos relacionados con la infraestructura vial, transporte, movilidad y seguridad vial, entre otros.
               </p>
             </article>
           </div>
@@ -238,7 +211,7 @@
             </h2>
             <article>
               <p class="copy_text">
-                Nos destacamos por nuestra pasión, por el éxito de nuestros clientes y por brindarles soluciones innovadoras en sus proyectos.
+                Nos destacamos por nuestra pasión, buenas relaciones con los clientes y por brindarles soluciones efectivas e innovadoras en sus proyectos.
               </p>
             </article>
           </div>
@@ -331,31 +304,14 @@
     <footer class="footer__sec">
       <div class="footer__content">
         <div class="footer__content-logo">
-          <img
-            src="img/logo.png"
-            alt="Logo_ingeorbe"
-            width="auto"
-            height="70"
-          />
-        </div>
-
-        <div class="footer__content-us">
-          <h3 class="subtitle">Sobre Nosotros</h3>
-          <p>
-            Somos una empresa conformada por un equipo profesional de ingenieros
-            especializados que cuentan con más de 20 años de experiencia en el
-            desarrollo de proyectos de ingeniería civil y arquitectura,
-            participando en la Dirección, Supervisión y Ejecución de las etapas
-            de Estructuración, Diseño y Planificación de proyectos relacionados
-            con la Infraestructura vial, transporte, movilidad y seguridad vial,
-            entre otros. 
-          </p>
-        </div>
-        <div class="footer__content-info">
-          <h3 class="subtitle">Contacto</h3>
-          <!-- <p>Ingeorbe SAS</p> -->
-          <p>Calle 74 # 15 - 80, INT 1 OF 619</p>
-          <p>Bogotá D.C, Colombia</p>
+          <a href="/index.html">
+            <img
+              src="img/logo.png"
+              alt="Logo_ingeorbe"
+              width="auto"
+              height="70"
+            />
+          </a>
         </div>
       </div>
       <div class="footer__content-copyright">

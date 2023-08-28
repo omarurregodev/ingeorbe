@@ -34,13 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  var swiper_projects = new Swiper(".projects__slider", {
+    cssMode: true,
+    autoplay: {
+      delay: 3000,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   const swiper = new Swiper(".mySwiper", {
     effect: "flip",
     grabCursor: true,
     autoplay: {
       delay: 3000,
     },
-
   });
 
 
@@ -68,6 +81,9 @@ function scrollToSection(sectionId) {
 
 function goHome() {
   window.location.href = "index.html";
+}
+function goToProjects() {
+  window.location.href = "projects.html";
 }
 function goServices() {
   window.location.href = "index.html#servicios";

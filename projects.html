@@ -4,25 +4,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ingeorbe</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="slick-1.8.1/slick/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@300;500&family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,600&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      href="http://www.cssscript.com/wp-includes/css/sticky.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@300;500&family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,600&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/jquery.js"></script>
+    <script src="js/swiper/swiper.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="js/main.js"></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo-container">
-          <img src="img/logo.png" alt="Logo_ingeorbe" width="auto" height="50">
+          <a href="/index.html">
+            <img
+            class="logo_svg"
+              src="img/logo.png"
+              alt="Logo_ingeorbe"
+              width="auto"
+              
+            />
+          </a>
         </div>
         <div class="button-container-navbar">
           <button class="btn" onclick="goHome()">
@@ -43,173 +73,148 @@
           </button>
         </div>
       </nav>
-      <section class="home__sec-projects" id="home_projects">
-        <div class="container-fluid-projects">
+      <section class="home__sec" id="home">
+        <div class="container-fluid">
+          <div class="container-filter"></div>
           <div class="container-uvp">
-            <h1 class="hero animate__animated hidden">NUESTROS PROYECTOS</h1>
-          </div>
-          <div class="container-figure animate__animated slider__slick slider ">
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_1.jpeg" alt="">
-            </figure>
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_2.jpeg" alt="">
-            </figure>
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_3.jpeg" alt="">
-            </figure>
-            <figure class="figure_slider">
-              <img class="img_hero" src="img/slider_4.webp" alt="">
-            </figure>
+            <h1 class="hero animate__animated hidden">
+              NUESTRA EXPERIENCIA
+            </h1>
+            <button class="btn-standar-mobile" onclick="scrollToSection('contacto')">
+              <span>Contacto</span>
+            </button>
           </div>
         </div>
       </section>
     </header>
-    <main class="content">
-      <section class="projects__sec">
+    <main class="content projects__page">
+      <section class="projects__sec" id="servicios">
+        <h3 class="subtitle service_align">Experiencia</h3>
+        <h2 class="title">
+          <span>Nuestros Proyectos</span>
+        </h2>
         <div class="projects__content-right">
-          <div class="projects__content-right-figure">
-            <figure class="adv__figure">
-              <img src="img/slider_1.jpeg" alt="CEO Ingeorbe">
-            </figure>
-          </div>
-          <div class="hidden projects__content-right-intro animate__animated">
-            <h3 class="subtitle">Proyecto #1</h3>
-            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
-            <article class="adv__article">
-              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+          <div class="hidden projects__content-intro animate__animated">
+            <h3 class="subtitle">Interventoría - Auditorio León de Greiff - UNAL</h3>
+            <article>
+              <p class="copy_text">
+                Interventoría técnica, administrativa,  financiera, contable, ambiental y  jurídica para la  adecuación del Auditorio León de  Greiff- Edificio 104 Universidad  Nacional De Colombia -  Adecuación para la protección a la  vida y el mejoramiento de las  condiciones de accesibilidad y  seguridad del Auditorio León De Greiff edificio 104 - Universidad Nacional De  Colombia, Sede Bogotá.
+              </p>
             </article>
+          </div>
+          <div class="projects__content-figure">
+            <figure>
+              <img class="img_hero" src="img/slider_1.jpeg" alt="" />
+            </figure>
           </div>
         </div>
         <div class="projects__content-left">
-          <div class="projects__content-left-figure">
-            <figure class="adv__figure">
-              <img src="img/slider_1.jpeg" alt="CEO Ingeorbe">
-            </figure>
-          </div>
-          <div class="hidden projects__content-left-intro animate__animated">
-            <h3 class="subtitle">Proyecto #2</h3>
-            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
-            <article class="adv__article">
-              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+          <div class="hidden projects__content-intro animate__animated">
+            <h3 class="subtitle">Consultoría - Deprimido vehícular - Bogotá D.C</h3>
+            <article>
+              <p class="copy_text">
+                Consultoría para los Estudios y Diseños del Deprimido vehicular y demás estructuras requeridas sobre la Avenida Caracas a la Calle 76, Bogotá D.C.
+              </p>
             </article>
+          </div>
+          <div class="projects__content-figure">
+            <figure>
+              <img class="img_hero" src="img/slider_1.jpeg" alt="" />
+            </figure>
           </div>
         </div>
         <div class="projects__content-right">
-          <div class="projects__content-right-figure">
-            <figure class="adv__figure">
-              <img src="img/slider_1.jpeg" alt="CEO Ingeorbe">
-            </figure>
-          </div>
-          <div class="hidden projects__content-right-intro animate__animated">
-            <h3 class="subtitle">Proyecto #3</h3>
-            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
-            <article class="adv__article">
-              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+          <div class="hidden projects__content-intro animate__animated">
+            <h3 class="subtitle">Interventoría - Avenida de las Américas - Bogotá D.C</h3>
+            <article>
+              <p class="copy_text">
+                Interventoría para los Estudios, Diseños y Construcción de las obras de adecuación, rehabilitación, reforzamiento y adecuación sísmica de los puentes Avenida de las Américas por Carrera 66, Avenida Carrera 68 por Avenidad de Las Americas (Éxito), Avenida de Las Américas por Carrera 71C, al sistema TransMilenio, Bogotá D.C.
+              </p>
             </article>
+          </div>
+          <div class="projects__content-figure">
+            <figure>
+              <img class="img_hero" src="img/slider_1.jpeg" alt="" />
+            </figure>
           </div>
         </div>
         <div class="projects__content-left">
-          <div class="projects__content-left-figure">
-            <figure class="adv__figure">
-              <img src="img/slider_1.jpeg" alt="CEO Ingeorbe">
-            </figure>
-          </div>
-          <div class="hidden projects__content-left-intro animate__animated">
-            <h3 class="subtitle">Proyecto #4</h3>
-            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
-            <article class="adv__article">
-              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+          <div class="hidden projects__content-intro animate__animated">
+            <h3 class="subtitle">Interventoría - Conservación de Puentes Vehículares y Peatonales - Bogotá D.C</h3>
+            <article>
+              <p class="copy_text">
+                Realizar la Interventoría Técnica, Administrativa, Financiera, Jurídica, Social, Ambiental y SST para las actividades para la Conservación de Puentes Vehiculares y/o Peatonales sobre cuerpos de agua de la Localidad De Kennedy, Bogotá D.C.
+              </p>
             </article>
+          </div>
+          <div class="projects__content-figure">
+            <figure>
+              <img class="img_hero" src="img/slider_1.jpeg" alt="" />
+            </figure>
           </div>
         </div>
         <div class="projects__content-right">
-          <div class="projects__content-right-figure">
-            <figure class="adv__figure">
-              <img src="img/slider_1.jpeg" alt="CEO Ingeorbe">
-            </figure>
-          </div>
-          <div class="hidden projects__content-right-intro animate__animated">
-            <h3 class="subtitle">Proyecto #5</h3>
-            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
-            <article class="adv__article">
-              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
+          <div class="hidden projects__content-intro animate__animated">
+            <h3 class="subtitle">Interventoría - Construcción Tramo Av. Ciudad de Cali - Bogotá D.C</h3>
+            <article>
+              <p class="copy_text">
+                  Interventoría para la  construcción de la Avenida Ciudad  de Cali desde la calle 153 hasta la  Avenida San José, Bogotá D.C.
+              </p>
             </article>
           </div>
-        </div>
-        <div class="projects__content-left">
-          <div class="projects__content-left-figure">
-            <figure class="adv__figure">
-              <img src="img/slider_1.jpeg" alt="CEO Ingeorbe">
+          <div class="projects__content-figure">
+            <figure>
+              <img class="img_hero" src="img/slider_1.jpeg" alt="" />
             </figure>
-          </div>
-          <div class="hidden projects__content-left-intro animate__animated">
-            <h3 class="subtitle">Proyecto #6</h3>
-            <h2 class="title"><span>Nombre <br> Proyecto</span></h2>
-            <article class="adv__article">
-              <p class="copy_text">"Trabajamos de la mano con ustedes, estableciendo una relación sólida y de confianza, para poder desarrollar estrategias personalizadas que maximicen los resultados de los proyectos."</p>
-            </article>
           </div>
         </div>
       </section>
 
       <section class="contact__sec" id="contacto">
         <div class="contact__content">
-          <div class="contact__content-intro">
-            <h3 class="subtitle">Tienes preguntas?</h3>
-            <h2 class="title "><span>Contactanos</span></h2>
-            <div class="container">
-              <div class="contact_form">
-                <form action="" class="form">
-                  <input type="hidden" sendto="omarurrego@omarurrego.com">
-                  <label for="nombre">Nombre: </label>
-                  <input type="text" name="nombre">
-                  <label for="email">Correo electrónico: </label>
-                  <input type="email" name="email">
-                  <label for="telefono">Telefono: </label>
-                  <input type="tel" name="telefono">
-                  <label for="mensaje">Mensaje: </label>
-                  <input type="text" name="mensaje">
-                  <div class="submit_container">
-                    <button class="btn-submit">Enviar</button>
-                  </div>
-                </form>
-              </div>
+          <div class="contact__content-title">
+            <h2>
+              <span
+                >¿Quieres Contactar <br />
+                con Nosotros?</span
+              >
+            </h2>
+          </div>
+          <div class="contact__content-phone">
+            <h3>Llamanos:</h3>
+            <p>Tel: 601 304 31 57</p>
+            <p>Cel: +57 300 556 24 52</p>
+          </div>
+          <div class="contact__content-email">
+            <h3>Escribe a:</h3>
+            <p><a href="mailto:dir.ejecutivo@ingeorbe.page">dir.ejecutivo@ingeorbe.page</a></p>
           </div>
         </div>
-        <div class="contact__content-map">
-          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ingeorbe&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:100%;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}.gmap_iframe {height:100%!important;}</style></div>
-        </div>
-        </div>
       </section>
-  
     </main>
 
     <footer class="footer__sec">
-      <div class="footer__content">
-        <div class="footer__content-info">
-          <h3 class="subtitle">Donde nos encuentras</h3>
-          <p>Ingeorbe SAS</p>
-          <p>Tel: +57 322 897 09 09</p>
-          <p>Calle 134 #17 - 16</p>
-          <p>Bogotá D.C, Colombia</p>
+        <div class="footer__content">
+          <div class="footer__content-logo">
+            <a href="/index.html">
+              <img
+                src="img/logo.png"
+                alt="Logo_ingeorbe"
+                width="auto"
+                height="70"
+              />
+            </a>
+          </div>
         </div>
-        <div class="footer__content-navigation">
-          <ul>
-            <li><a href="" onclick="goHome()">Inicio</a></li>
-            <li><a href="" onclick="goServices()">Servicios</a></li>
-            <li><a href="" onclick="scrollToSection('home_projects')">Proyectos</a></li>
-            <li><a href="" onclick="scrollToSection('contacto')">Contacto</a></li>
-          </ul>
+        <div class="footer__content-copyright">
+          <p class="lead">
+            Ingeorbe 2023, Made by
+            <a href="http://www.omarurrego.com" target="_blank">Omar T. Urrego</a>
+          </p>
         </div>
-      </div>
-      <div class="footer__content-copyright">
-        <p class="lead">Ingeorbe 2023, Made by <a href="http://omarurrego.com" target="_blank">Omar T. Urrego</a></p>
-      </div>
-    </footer>
+      </footer>
 
-
-    <!-- BOOTSTRAP JS FILES AND POPPER -->
+    <!-- JS FILES AND POPPER -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
@@ -221,6 +226,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery.js"></script>
+    <script src="js/swiper/swiper.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
   </body>
 </html>
