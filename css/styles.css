@@ -677,7 +677,6 @@ h2 {
 }
 
 .clients__content:before {
-  background-color: #fff;
   position: absolute;
   display: block;
   content: '';
@@ -688,10 +687,11 @@ h2 {
   right: 0;
   z-index: -1;
   margin: auto 0;
+  background-color: #fff;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   box-shadow: -4px 4px 39px 15px rgba(0,0,0,0.54);
--webkit-box-shadow: -4px 4px 39px 15px rgba(0,0,0,0.54);
--moz-box-shadow: -4px 4px 39px 15px rgba(0,0,0,0.54);
+  -webkit-box-shadow: -4px 4px 39px 15px rgba(0,0,0,0.54);
+  -moz-box-shadow: -4px 4px 39px 15px rgba(0,0,0,0.54);
 }
 
 .clients__content:after {
@@ -1545,6 +1545,7 @@ h2 {
 
 @media (max-width: 630px) {
 
+
   .content::before {
     width: 300px;
     height: 300px;
@@ -1754,7 +1755,7 @@ h2 {
     clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
     height: 100%;
     width: 100%;
-    background-color: none;
+    background: none;
   }
 
   .clients__content:after {
