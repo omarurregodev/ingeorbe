@@ -280,7 +280,7 @@ h2 {
   position: relative;
   width: 100%;
   padding: 0 5%;
-  background-image: url('/img/header-2.jpg');
+  background-image: url('../img/header-2.jpg');
   background-size: cover;
   position: relative;
 }
@@ -316,39 +316,10 @@ h2 {
   }
 }
 
-.home__sec .container-fluid .container-figure {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.container-figure {
-  position: relative;
-  max-width: 600px;
-  padding: 10px;
-  border: 5px solid #C1A57B;
-}
-
 .img_hero {
   width: 100%;
 }
 
-.container-figure:before {
-  content: '';
-  width: 100px;
-  height: 90px;
-  position: absolute;
-  display: block;
-  bottom: -22px;
-  left: -40px;
-  z-index: 1;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  background-color: #C1A57B;
-  opacity: 0;
-  transition: opacity 1s;
-}
 
 .container-figure.fade-in:before {
   opacity: 1;
