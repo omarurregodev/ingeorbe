@@ -48,6 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  var swiper_projects = new Swiper(".owners__slider", {
+    cssMode: true,
+    autoplay: {
+      delay: 3000,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   const swiper = new Swiper(".mySwiper", {
     effect: "flip",
     grabCursor: true,
