@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     effect: "flip",
     grabCursor: true,
     autoplay: {
-      delay: 3000,
+      delay: 1500,
     },
   });
 

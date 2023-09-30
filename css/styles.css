@@ -672,7 +672,15 @@ h2 {
   background-color: transparent;
   margin: 30px 100px 30px;
   position: relative;
+  
+  .swiper-slide img {
+    display: block;
+    width: unset;
+    height: 100%;
+    max-height: 600px;
+  }
 }
+
 
 .advantages__content-figure>.adv__figure {
   height: 100%;
@@ -1105,9 +1113,19 @@ h2 {
         text-align: center;
         color: #C1A57B !important;
       }
-      & article > p {
-        text-align: justify !important;
-        color:#222831
+      & article {
+        & li, p {
+         text-align: right;
+         font-family: 'Pathway', sans-serif;
+         font-style: normal;
+         font-weight: 100;
+         width: 70%;
+         font-size: 16px;
+         letter-spacing: 2px;
+         line-height: 20px;
+         text-align: justify !important;
+         color:#222831
+       }
       }
     }
     & .projects__content-figure {
@@ -1146,9 +1164,27 @@ h2 {
         text-align: center;
         color: #30475E;
       }
-      & article > p {
-        text-align: justify !important;
-        color: #222831;
+      & article  {
+        text-align: right;
+          font-family: 'Pathway', sans-serif;
+          font-style: normal;
+          font-weight: 100;
+          width: 100%;
+          font-size: 16px;
+          letter-spacing: 2px;
+          line-height: 20px;
+          text-align: justify !important;
+          color:#222831;
+        
+          & ul {
+            width: 70%;
+            text-align: left;
+            margin-bottom: 20px;
+          }
+          & p {
+            color:#222831;
+            text-align: left;
+          }
   
       }
     }
@@ -1336,7 +1372,8 @@ h2 {
 
   .services__slider:before {
     width: 100%;
-    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
   }
 
   .services__content:after {
@@ -1355,15 +1392,27 @@ h2 {
 
 
   .services__content-intro {
-    padding: 80px 0;
+    padding: 80px 0 80px 60px;
+    align-items: flex-start;
 
     & .subtitle {
       color: #AFD3E2;
+      font-size: 26px;
+      text-align: left;
     }
 
     & article .copy_text {
       width: 85%;
       font-size: 14px;
+      text-align: left;
+      letter-spacing: 1px;
+      line-height: 20px;
+
+      & li {
+        &::before {
+          left: -25px;
+        }
+      }
     }
   }
 
@@ -1378,19 +1427,24 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    padding-left: 60px;
+    padding-left: 0;
 
-    & img {
-      height: 100%;
-      object-fit: contain;
+    & figure {
+      height: 100% !important;
+      
+      & img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
+
   }
 
   /******** ADVANTAGES SECTION ********/
 
   .advantages__content:before {
     width: 100%;
-    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
   }
 
   .advantages__content:after {
@@ -1401,10 +1455,25 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & .swiper {
+      width: 60% !important;
+      margin: 30px 40px;
+    }
   }
   .advantages__content-figure {
     margin: 20px 40px 20px 60px;
     height: 80%;
+
+    & figure {
+      height: 100% !important;
+      max-width: 359px !important;
+      
+      & img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 
   .advantages__content-intro {
@@ -1414,13 +1483,18 @@ h2 {
   .advantages__content-intro>article>.copy_text {
     width: 80%;
     font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
   }
 
   /******** CLIENTS SECTION ********/
 
+
+  .clients__content {
+  }
   .clients__content:before {
     width: 100%;
-    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
   }
 
   .clients__content:after {
@@ -1431,6 +1505,31 @@ h2 {
   .clients__content-intro>article>.copy_text {
     width: 80%;
     font-size: 14px;
+  }
+
+  .clients__content-intro {
+    padding: 150px 0 150px 60px;
+    align-items: flex-start;
+
+    & .subtitle {
+      color: #AFD3E2;
+      font-size: 26px;
+      text-align: left;
+    }
+    & .title {
+      /* color: #AFD3E2; */
+      font-size: 26px;
+      text-align: left;
+    }
+
+    & article .copy_text {
+      width: 85%;
+      font-size: 14px;
+      text-align: left;
+      letter-spacing: 1px;
+      line-height: 20px;
+
+    }
   }
 
 
@@ -1652,11 +1751,23 @@ h2 {
 
   .services__sec {
     & .swiper {
-      max-height: 750px;
+      max-height: 1000px;
+
+      & .swiper-wrapper {
+        align-items: flex-start;
+      }
 
       & .swiper-slide {
-        max-height: 790px !important;
+        max-height: 100% !important;
         flex-direction: column-reverse !important;
+
+        & .services__content-figure {
+          max-height: 350px;
+          height: 350px;
+          & figure {
+
+          }
+        }
       }
 
       & .arrows-control {
@@ -1702,7 +1813,7 @@ h2 {
     }
 
     & article .copy_text {
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -1735,6 +1846,16 @@ h2 {
 
   .advantages__content {
     flex-direction: column;
+    width: 100%;
+
+    & .swiper {
+      width: 100% !important;
+
+      & figure {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
   }
 
   .advantages__content:before {
@@ -1769,6 +1890,8 @@ h2 {
     margin: 50px auto 20px;
     width: 100%;
     max-width: 320px;
+
+
   }
 
   .advantages__content-figure>.adv__figure>img {
