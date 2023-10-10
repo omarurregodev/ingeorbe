@@ -935,6 +935,7 @@ h2 {
 .footer__content-logo {
   width: 30%;
   height: 100%;
+  text-align: center;
 }
 
 .footer__content-copyright {
