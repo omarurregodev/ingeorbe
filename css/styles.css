@@ -11,6 +11,7 @@ body {
 .content {
   position: relative;
   display: block;
+  
 }
 
 .hidden {
@@ -1144,6 +1145,7 @@ h2 {
         z-index: 1;
       }
       & figure {
+        width: 100%;
         & img {
           object-fit: contain;
           height: 100%;
@@ -1204,6 +1206,7 @@ h2 {
         z-index: 1;
       }
       & figure {
+        width: 100%;
         & img {
           object-fit: contain;
           height: 100%;
