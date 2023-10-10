@@ -976,6 +976,11 @@ h2 {
   padding: 15% 0;
 }
 
+.projects__sec {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .projects__content {
   display: flex;
   flex-direction: column;
